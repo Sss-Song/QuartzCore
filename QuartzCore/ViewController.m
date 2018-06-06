@@ -63,7 +63,6 @@ static NSString *const cellID = @"cellID";
 
 -(UITableView *)Tab
 {
-    
     if (!_Tab) {
         _Tab = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _Tab.delegate = self;

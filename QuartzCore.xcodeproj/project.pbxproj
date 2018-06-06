@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1D887C20C6D036002572AB /* CADisplayLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1D887B20C6D036002572AB /* CADisplayLinkController.m */; };
 		BD5E240C20C111470010FB6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E240B20C111470010FB6B /* AppDelegate.m */; };
 		BD5E240F20C111470010FB6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E240E20C111470010FB6B /* ViewController.m */; };
 		BD5E241220C111470010FB6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD5E241020C111470010FB6B /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		BD5E241A20C111480010FB6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E241920C111480010FB6B /* main.m */; };
 		BD5E242420C111480010FB6B /* QuartzCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E242320C111480010FB6B /* QuartzCoreTests.m */; };
 		BD5E242F20C111480010FB6B /* QuartzCoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5E242E20C111480010FB6B /* QuartzCoreUITests.m */; };
-		BD760DE420C12AA60031189C /* CADisplayLinkController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD760DE320C12AA60031189C /* CADisplayLinkController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD1D887A20C6D036002572AB /* CADisplayLinkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkController.h; sourceTree = "<group>"; };
+		BD1D887B20C6D036002572AB /* CADisplayLinkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkController.m; sourceTree = "<group>"; };
 		BD5E240720C111470010FB6B /* QuartzCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuartzCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5E240A20C111470010FB6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BD5E240B20C111470010FB6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		BD5E242A20C111480010FB6B /* QuartzCoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuartzCoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5E242E20C111480010FB6B /* QuartzCoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuartzCoreUITests.m; sourceTree = "<group>"; };
 		BD5E243020C111480010FB6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD760DE220C12AA60031189C /* CADisplayLinkController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CADisplayLinkController.h; sourceTree = "<group>"; };
-		BD760DE320C12AA60031189C /* CADisplayLinkController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CADisplayLinkController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD1D887920C6D036002572AB /* CADisplayLink */ = {
+			isa = PBXGroup;
+			children = (
+				BD1D887A20C6D036002572AB /* CADisplayLinkController.h */,
+				BD1D887B20C6D036002572AB /* CADisplayLinkController.m */,
+			);
+			path = CADisplayLink;
+			sourceTree = "<group>";
+		};
 		BD5E23FE20C111470010FB6B = {
 			isa = PBXGroup;
 			children = (
+				BD1D887920C6D036002572AB /* CADisplayLink */,
 				BD5E240920C111470010FB6B /* QuartzCore */,
 				BD5E242220C111480010FB6B /* QuartzCoreTests */,
 				BD5E242D20C111480010FB6B /* QuartzCoreUITests */,
@@ -113,8 +123,6 @@
 				BD5E241520C111480010FB6B /* LaunchScreen.storyboard */,
 				BD5E241820C111480010FB6B /* Info.plist */,
 				BD5E241920C111480010FB6B /* main.m */,
-				BD760DE220C12AA60031189C /* CADisplayLinkController.h */,
-				BD760DE320C12AA60031189C /* CADisplayLinkController.m */,
 			);
 			path = QuartzCore;
 			sourceTree = "<group>";
@@ -267,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD760DE420C12AA60031189C /* CADisplayLinkController.m in Sources */,
+				BD1D887C20C6D036002572AB /* CADisplayLinkController.m in Sources */,
 				BD5E240F20C111470010FB6B /* ViewController.m in Sources */,
 				BD5E241A20C111480010FB6B /* main.m in Sources */,
 				BD5E240C20C111470010FB6B /* AppDelegate.m in Sources */,
@@ -440,6 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AK6S8P7BZ;
 				INFOPLIST_FILE = QuartzCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AK6S8P7BZ;
 				INFOPLIST_FILE = QuartzCore/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
